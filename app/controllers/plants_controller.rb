@@ -35,6 +35,7 @@ class PlantsController < ApplicationController
         format.json { render json: @plant.errors, status: :unprocessable_entity }
       end
     end
+    redirect_to root_path
   end
 
   # PATCH/PUT /plants/1
